@@ -1,0 +1,255 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/font-awesome/scss/font-awesome"
+@import "../app/libs/ion.rangeSlider/css/ion.rangeSlider.skinFlat"
+@import "../app/libs/ion.rangeSlider/css/ion.rangeSlider"
+
+
+
+
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+.katalog
+	width: 100%
+	height: 100%
+	padding-bottom: 20px
+	background-color: rgba(white,.80)
+	padding-top: 20px
+
+.katalog__body
+	background-color: #FFF
+	width: 100%
+	height: 100%
+	padding-bottom: 10px
+
+.filter__heading, .katalog__heading
+	background-color: $main-color
+	width: 100%
+	border-radius: 0
+	text-align: center
+	color: #fff
+
+.panel-group
+	margin-bottom: 0
+	.panel-default
+		border: none
+		.panel-heading
+			background-color: #FFF
+			border: none
+			border-bottom: 1px solid $main-color
+		.panel-title
+			text-transform: none
+			a
+				color: $main-color
+				text-decoration: none
+				font-family: "OpenSansBold"
+		.checkbox
+			color: $main-color
+			font-size: em(16px)
+			line-height: 22px
+			
+		.panel-collapse
+			border-bottom: 2px solid $main-color
+
+.panel
+	margin: 0
+.card
+	position: relative
+	padding-top: 38px
+	&-content
+		position: relative
+		padding: 0
+		&:hover
+			.overlay
+				display: block
+	&-footer
+		border: none
+		margin: 0
+		text-align: center
+		background-color: $main-color
+		height: 60px
+		
+.overlay
+	display: none
+	position: absolute
+	z-index: 1000
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 100%
+	height: 100%
+	margin: 0 auto
+	font-size: em(48px)
+	background-color: rgba(black, .6)
+	color: rgba(#fff, .6)
+	text-align: center
+
+
+
+
+.pagination
+	float: right
+	padding-right: 15px
+	padding-top: 10px
+	li
+		a
+			color: $main-color
+			border-color: $main-color
+			&:hover
+				background-color: lighten($main-color, 10%)
+				color: $accent-color
+				border-color: $main-color
+			&:focus
+				background-color: $main-color
+				color: $accent-color
+			&:last-child, &:first-child
+				border-radius: 0px
+
+
+
+
+.popular__topline
+	height: 80px
+	width: 100%
+	background-color: rgba(lighten($accent-color, 5%), 1)
+	color: $main-color
+	text-align: center
+	h3
+		line-height: 80px
+
+.irs
+	&-bar
+		background-color: $main-color
+	&-from, &-to, &-single
+		background-color: $main-color
+		font-size: em(12px)
+		border-radius: 0px
+		&::after
+			border-top-color: $main-color
+	&-max, &-min
+		border-radius: 0px
+		font-size: em(12px)
+
+
+/*POPULAR SLIDER START*/
+	/*OLD NAV */
+.owl-nav
+	overflow: hidden
+
+	/*SLIDER NAV START*/
+.pslider-wrap
+	.pslider-nav-container
+		position: relative
+	.pslider-nav
+		color: #fff
+		font-size: 48px;
+		position: absolute
+		top: 275px
+		padding: 0
+		margin: 0
+		width: 100%
+		z-index: 2
+		&:hover
+			color: $main-color
+		div
+			cursor: pointer
+			position: absolute
+			&:last-child
+				right: 0
+		.prev, .next
+			line-height: 31px
+			height: 31px
+	/*SLIDER NAV END*/
+
+
+	/*SLIDER START*/
+.pslider
+	position: relative
+	top: 0
+	width: 100%
+	overflow: hidden
+	height: 100
+	.owl-dots
+		position: absolute
+		bottom: 0px
+		width: 100%
+		text-align: center
+		.owl-dot
+			display: inline-block
+			margin: 0 2px
+			width: 15px
+			height: 15px
+			background-color: transparent
+			border: 2px solid $main-color
+			border-radius: 10em
+			cursor: pointer
+			&.active
+				background-color: $main-color
+	.pslide-wrap
+		float: left
+	.pslide
+		color: #fff
+		position: relative
+		padding: 80px 0px
+		height: 100%
+		h2
+			position: relative
+			left: -200px
+			opacity: 0
+			transition: all 1.5s ease
+
+		&-bg
+			position: absolute		
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			&::before
+				position: absolute
+				content: ' '
+				background-color: rgba($accent-color, .80)
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%		
+		&-content
+			position: relative
+			color: #fff
+			z-index: 1
+			.card
+				padding: 0
+			.overlay
+				top: 0
+/*POPULAR SLIDER END*/
+
+//ALWAYS END
+@import "media"
