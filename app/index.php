@@ -232,21 +232,7 @@
 					</div>
 
 				</div>
-				
-				
-
 			</div>
-			<!--<nav class="main-menu">
-				<div class="container">
-						<ul class="sf-menu">
-							<li class="active"><a href="#">Каталог</a></li>
-							<li><a href="#">Категории</a></li>
-							<li><a href="#">CMS шаблоны</a></li>
-							<li><a href="#">Интернет-магазины</a></li>
-							<li><a href="#">Эксклюзивы</a></li>
-						</ul>
-				</div>
-			</nav>-->
 			<nav class="navbar navbar-default main-menu">
 				<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->

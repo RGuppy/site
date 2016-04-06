@@ -41,7 +41,7 @@ body textarea:required:valid
 	width: 100%
 	height: 100%
 	padding-bottom: 20px
-	background-color: rgba(white,.80)
+	background-color: rgba(white, .97)
 	padding-top: 20px
 
 .katalog__body
@@ -82,6 +82,10 @@ body textarea:required:valid
 
 
 /*CARD START*/
+.card
+	padding:
+		left: 2px
+		right: 2px
 .card-item
 	border: 5px solid lighten($main-color, 5%)
 	border-radius: 5px
@@ -107,7 +111,7 @@ body textarea:required:valid
 		margin-bottom: 15px
 		margin-top: 15px
 	&-image
-		min-height: 300px
+		min-height: 200px
 		background-size: cover
 		position: relative
 		svg
@@ -118,6 +122,9 @@ body textarea:required:valid
 			margin-top: -50px
 			opacity: 0
 			transition: all .5 ease
+
+		img
+			margin: auto
 		&::before
 			position: absolute
 			content: ''
@@ -257,9 +264,6 @@ body textarea:required:valid
 			left: -200px
 			opacity: 0
 			transition: all 1.5s ease
-			
-
-
 		&-bg
 			position: absolute		
 			top: 0
@@ -279,13 +283,14 @@ body textarea:required:valid
 			color: black
 			z-index: 1
 			.card
+				margin: auto
 				padding: 0
 			.overlay
 				top: 0
 /*POPULAR SLIDER END*/
 
 footer
-	background-color: rgba($main-color, .8)
+	background-color: rgba($main-color, .95)
 	clear: both
 	bottom: 0px
 	color: #fff
