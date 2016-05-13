@@ -5,8 +5,8 @@
 
 	<meta charset="utf-8">
 
-	<title>Заголовок</title>
-	<meta name="description" content="">
+	<title>Template for You</title>
+	<meta name="description" content=""><!--ДЛЯ ПОИСКОВИКА ОПИСАНИЕ СТРАНИЦЫ-->
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -230,7 +230,6 @@
 						<a href="#"><i class="fa fa-twitter"></i></a>
 						<a href="#"><i class="fa fa-odnoklassniki"></i></a>
 					</div>
-
 				</div>
 			</div>
 			<nav class="navbar navbar-default main-menu">
@@ -268,77 +267,42 @@
 				</div>
 			</div>
 			<div class="slider">
+				<?php for ($a = 1; $a <= 3; $a++){?>
 					<div class="slide">
-						<div class="slide-bg"></div>
-						<div class="slide-content">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-10 col-md-offset-1">
-										<div class="row">
-											<div class="col-md-6 left">
-												<h2>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Ты диких точках осталось. Даль раз о ему инициал ты курсивных переписали переулка предупредила!</h2>
+							<div class="slide-bg"></div>
+							<div class="slide-content">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-10 col-md-offset-1">
+											<div class="row">
+												<div class="col-md-6 left">
+													<h2>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Ты диких точках осталось. Даль раз о ему инициал ты курсивных переписали переулка предупредила!</h2>
+												</div>
+												<div class="col-md-6"><img src="img/mockup.png" class="img-responsive slide-img-wrap" alt="placeholder+image"></div>
 											</div>
-											<div class="col-md-6"><img src="img/mockup.png" class="img-responsive slide-img-wrap" alt="placeholder+image"></div>
+											<div class="row btn__slider">
+												<div class="col-md-12"><a href="#" class="button__main">Каталог</a></div>
+											</div>
+											
 										</div>
-										<div class="row btn__slider">
-											<div class="col-md-12"><a href="#" class="button__main">Каталог</a></div>
-										</div>
-										
 									</div>
 								</div>
 							</div>
-						</div>
 					</div>
-					<div class="slide">
-						<div class="slide-bg"></div>
-						<div class="slide-content">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-10 col-md-offset-1">
-										<div class="row">
-											<div class="col-md-6 left">
-												<h2>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Ты диких точках осталось. Даль раз о ему инициал ты курсивных переписали переулка предупредила!</h2>
-											</div>
-											<div class="col-md-6"><img src="img/mockup.png" class="img-responsive slide-img-wrap" alt="placeholder+image"></div>
-										</div>
-										<div class="row btn__slider">
-											<div class="col-md-12"><a href="#" class="button__main">Каталог</a></div>
-										</div>
-										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slide">
-						<div class="slide-bg"></div>
-						<div class="slide-content">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-10 col-md-offset-1">
-										<div class="row">
-											<div class="col-md-6 left">
-												<h2>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Ты диких точках осталось. Даль раз о ему инициал ты курсивных переписали переулка предупредила!</h2>
-											</div>
-											<div class="col-md-6"><img src="img/mockup.png" class="img-responsive slide-img-wrap" alt="placeholder+image"></div>
-										</div>
-										<div class="row btn__slider">
-											<div class="col-md-12"><a href="#" class="button__main">Каталог</a></div>
-										</div>
-										
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+				<?php } ?>
 			</div>
 		</section>
 
 	</header>
 
+
+
+
+<!--Kataloge START-->
 	<section class="katalog">
 		<div class="container">
 			<div class="row">
+	<!--Filter START-->
 				<div class="col-md-3 filter">
 
 					<div class="panel-heading filter__heading">
@@ -358,17 +322,17 @@
 								<div class="panel-body">
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 1
+											<input type="checkbox">Интернет-магазины
 										</label>
 									</div>
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 2
+											<input type="checkbox">Портфолио
 										</label>
 									</div>
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 3
+											<input type="checkbox">CMS шаблоны
 										</label>
 									</div>
 								</div>
@@ -390,17 +354,17 @@
 								<div class="panel-body">
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 1
+											<input type="checkbox">Bootstrap 3
 										</label>
 									</div>
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 2
+											<input type="checkbox">Bootstrap 4
 										</label>
 									</div>
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 3
+											<input type="checkbox">MaterializeCSS
 										</label>
 									</div>
 								</div>
@@ -422,17 +386,17 @@
 								<div class="panel-body">
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 1
+											<input type="checkbox">Material Design
 										</label>
 									</div>
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 2
+											<input type="checkbox">Скрытое меню
 										</label>
 									</div>
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 3
+											<input type="checkbox">Parallax
 										</label>
 									</div>
 								</div>
@@ -454,17 +418,22 @@
 								<div class="panel-body">
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 1
+											<input type="checkbox">Joomla
 										</label>
 									</div>
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 2
+											<input type="checkbox">Wordpress
 										</label>
 									</div>
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 3
+											<input type="checkbox">1C Bitrix
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">ModX
 										</label>
 									</div>
 								</div>
@@ -486,17 +455,27 @@
 								<div class="panel-body">
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 1
+											<input type="checkbox">Материальный дизайн
 										</label>
 									</div>
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 2
+											<input type="checkbox">Скроллинг
 										</label>
 									</div>
 									<div class="checkbox">
 										<label>
-											<input type="checkbox">Пункт 3
+											<input type="checkbox">Рисунки от руки
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">Бизнес
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">Карточный интерфейс
 										</label>
 									</div>
 								</div>
@@ -557,111 +536,84 @@
 					</div>
 					<!--Money END-->
 				</div>
-
+	<!--Filter END-->
 				<div class="col-md-9">
 					<div class="panel-heading katalog__heading">
 						<h3 class="panel-title">Каталог</h3>
 					</div>
 					<div class="container katalog__body">
 						<div class="row">
-							<!--for PHP
-							<?php for ($i = 1; $i <= 12; $i++){
-							?>
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="card">
-										<div class="card-content">
-											<a href="#">
-												<div class="overlay"><i class="fa fa-search-plus"></i></div>
-												<img src="img/texture.png" alt="" class="img-responsive">
-											</a>
+							<?php for ($i = 1; $i <= 12; $i++){?>
+								<div class="col-md-4 col-sm-6 col-xs-12 card">
+									<div class="card-item">
+										<a href="#">
+											<div class="card-item-image">
+											<img src="img/mockup.png" alt="" class="img-responsive">
+														<svg width="100px" height="100px" viewBox="0 0 180 180">
+															<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																<g id="180---iPhone-6-Plus" stroke="white">
+																	<circle id="Oval-1" stroke-width="5" cx="90" cy="90" r="87"></circle>
+																	<path d="M90,30 L90,150" id="Line" stroke-width="4" stroke-linecap="square" transform="translate(90.000000, 90.000000) rotate(90.000000) translate(-90.000000, -90.000000) "></path>
+																	<path d="M90,30 L90,150" id="Line" stroke-width="4" stroke-linecap="square"></path>
+																</g>
+															</g>
+														</svg>
+												</div>
+										</a>
+										<h4>Bootstrap 3 Template</h4>
+										<div class="card-item-stars">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
 										</div>
-										<div class="card-panel">
-												<a href="#" class="button__kataloge">Купить</a>
+										<div class="card-item-price">
+											<i class="fa fa-credit-card"></i>	<span>100</span> $
 										</div>
+										<button class="btn btn_default">Купить</button>
 									</div>
 								</div>
-								<?php
-								}
-								?>-->
-
-								<a class="image"  href="#">
-									<span class="roll" ></span>
-									<img class="imgborder" alt="" src="images/pic.jpg">			
-								</a>
-
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="panel panel-default">
-										<div class="panel-body">
-	    									<img src="img/texture.png" alt="" class="img-responsive">
-	    								</div>
-	    								<div class="panel-footer">
-	    									<a href="#" class="button__kataloge">Купить</a>
-	    								</div>
-									</div>
-								</div>
-
-
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="card">
-										<div class="card-content">
-											<a href="#">
-												<div class="overlay"><i class="fa fa-search-plus"></i></div>
-												<img src="img/texture.png" alt="" class="img-responsive">
-											</a>
-										</div>
-										<div class="card-panel">
-												<a href="#" class="button__kataloge">Купить</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="card">
-										<div class="card-content">
-											<a href="#">
-												<div class="overlay"><i class="fa fa-search-plus"></i></div>
-												<img src="img/texture.png" alt="" class="img-responsive">
-											</a>
-										</div>
-										<div class="card-panel">
-												<a href="#" class="button__kataloge">Купить</a>
-										</div>
-									</div>
-								</div>
-								
-							</div>
+							<?php }?>
 						</div>
+
 
 						<!--PAGINATION START-->
 						
-						<div class="col-md-12">
-							<div class="row">
-								<ul class="pagination">
-									<li>
-										<a href="#" aria-label="Previous">
-											<span aria-hidden="true">&laquo;</span>
-										</a>
-									</li>
-									<li><a href="#">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li><a href="#">4</a></li>
-									<li><a href="#">5</a></li>
-									<li>
-										<a href="#" aria-label="Next">
-											<span aria-hidden="true">&raquo;</span>
-										</a>
-									</li>
-								</ul>
-							</div>
+						<div class="row">
+							<ul class="pagination">
+								<li>
+									<a href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li>
+									<a href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul>
 						</div>
 
 						<!--PAGINATION END-->
-
-					</div>	
-				</div>
+								
+					</div>
+				</div>	
 			</div>
 		</div>
 	</section>
+	
+
+<!--Kataloge END-->
+
+
+<!--Popular START-->
+
 	<section class="popular">
 		<div class="container popular__topline">
 			<div class="row">
@@ -680,6 +632,8 @@
 				</div>
 			</div>
 			<div class="pslider">
+				<?php for ($b = 1; $b <= 3; $b++){
+				?>
 					<div class="pslide">
 						<div class="pslide-bg"></div>
 						<div class="pslide-content">
@@ -687,198 +641,68 @@
 								<div class="row">
 									<div class="col-md-10 col-md-offset-1">
 										<div class="row">
-											<div class="col-md-3">
-												<div class="card">
-													<div class="card-content">
+											<?php for ($i = 1; $i <= 3; $i++){
+											?>
+											<div class="col-md-4">
+												<div class="card-item">
 														<a href="#">
-															<div class="overlay"><i class="fa fa-search-plus"></i></div>
-															<img src="img/texture.png" alt="" class="img-responsive">
+															<div class="card-item-image">
+															<img src="img/mockup.png" alt="" class="img-responsive">
+																		<svg width="100px" height="100px" viewBox="0 0 180 180">
+																			<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																				<g id="180---iPhone-6-Plus" stroke="white">
+																					<circle id="Oval-1" stroke-width="5" cx="90" cy="90" r="87"></circle>
+																					<path d="M90,30 L90,150" id="Line" stroke-width="4" stroke-linecap="square" transform="translate(90.000000, 90.000000) rotate(90.000000) translate(-90.000000, -90.000000) "></path>
+																					<path d="M90,30 L90,150" id="Line" stroke-width="4" stroke-linecap="square"></path>
+																				</g>
+																			</g>
+																		</svg>
+																</div>
 														</a>
-													</div>
-													<div class="card-panel">
-															<a href="#" class="button__kataloge">Купить</a>
+														<h4>Bootstrap 3 Template</h4>
+														<div class="card-item-stars">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</div>
+														<div class="card-item-price">
+															<i class="fa fa-credit-card"></i>	<span>100</span> $
+														</div>
+														<button class="btn btn_default">Купить</button>
 													</div>
 												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="card">
-													<div class="card-content">
-														<a href="#">
-															<div class="overlay"><i class="fa fa-search-plus"></i></div>
-															<img src="img/texture.png" alt="" class="img-responsive">
-														</a>
-													</div>
-													<div class="card-panel">
-															<a href="#" class="button__kataloge">Купить</a>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="card">
-													<div class="card-content">
-														<a href="#">
-															<div class="overlay"><i class="fa fa-search-plus"></i></div>
-															<img src="img/texture.png" alt="" class="img-responsive">
-														</a>
-													</div>
-													<div class="card-panel">
-															<a href="#" class="button__kataloge">Купить</a>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="card">
-													<div class="card-content">
-														<a href="#">
-															<div class="overlay"><i class="fa fa-search-plus"></i></div>
-															<img src="img/texture.png" alt="" class="img-responsive">
-														</a>
-													</div>
-													<div class="card-panel">
-															<a href="#" class="button__kataloge">Купить</a>
-													</div>
-												</div>
-											</div>
+											<?php } ?>
 										</div>		
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="pslide">
-						<div class="pslide-bg"></div>
-						<div class="pslide-content">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-10 col-md-offset-1">
-										<div class="row">
-											<div class="col-md-3">
-												<div class="card">
-													<div class="card-content">
-														<a href="#">
-															<div class="overlay"><i class="fa fa-search-plus"></i></div>
-															<img src="img/texture.png" alt="" class="img-responsive">
-														</a>
-													</div>
-													<div class="card-panel">
-															<a href="#" class="button__kataloge">Купить</a>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="card">
-													<div class="card-content">
-														<a href="#">
-															<div class="overlay"><i class="fa fa-search-plus"></i></div>
-															<img src="img/texture.png" alt="" class="img-responsive">
-														</a>
-													</div>
-													<div class="card-panel">
-															<a href="#" class="button__kataloge">Купить</a>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="card">
-													<div class="card-content">
-														<a href="#">
-															<div class="overlay"><i class="fa fa-search-plus"></i></div>
-															<img src="img/texture.png" alt="" class="img-responsive">
-														</a>
-													</div>
-													<div class="card-panel">
-															<a href="#" class="button__kataloge">Купить</a>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="card">
-													<div class="card-content">
-														<a href="#">
-															<div class="overlay"><i class="fa fa-search-plus"></i></div>
-															<img src="img/texture.png" alt="" class="img-responsive">
-														</a>
-													</div>
-													<div class="card-panel">
-															<a href="#" class="button__kataloge">Купить</a>
-													</div>
-												</div>
-											</div>
-										</div>		
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="pslide">
-						<div class="pslide-bg"></div>
-						<div class="pslide-content">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-10 col-md-offset-1">
-										<div class="row">
-											<div class="col-md-3">
-												<div class="card">
-													<div class="card-content">
-														<a href="#">
-															<div class="overlay"><i class="fa fa-search-plus"></i></div>
-															<img src="img/texture.png" alt="" class="img-responsive">
-														</a>
-													</div>
-													<div class="card-panel">
-															<a href="#" class="button__kataloge">Купить</a>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="card">
-													<div class="card-content">
-														<a href="#">
-															<div class="overlay"><i class="fa fa-search-plus"></i></div>
-															<img src="img/texture.png" alt="" class="img-responsive">
-														</a>
-													</div>
-													<div class="card-panel">
-															<a href="#" class="button__kataloge">Купить</a>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="card">
-													<div class="card-content">
-														<a href="#">
-															<div class="overlay"><i class="fa fa-search-plus"></i></div>
-															<img src="img/texture.png" alt="" class="img-responsive">
-														</a>
-													</div>
-													<div class="card-panel">
-															<a href="#" class="button__kataloge">Купить</a>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="card">
-													<div class="card-content">
-														<a href="#">
-															<div class="overlay"><i class="fa fa-search-plus"></i></div>
-															<img src="img/texture.png" alt="" class="img-responsive">
-														</a>
-													</div>
-													<div class="card-panel">
-															<a href="#" class="button__kataloge">Купить</a>
-													</div>
-												</div>
-											</div>
-										</div>		
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+				<?php } ?>
+
+
 			</div>
-		</section>
+		</section>	
+<!--Popular END-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 logo">
+						<h2>Tmp4you</h2>
+					</div>
+					<div class="col-md-5"></div>
+					<div class="col-md-3 social">
+						<a href="#"><i class="fa fa-vk"></i></a>
+						<a href="#"><i class="fa fa-facebook-official"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-odnoklassniki"></i></a>
+					</div>
 
-
+			</div>
+		</div>
+	</footer>
 
 	<div class="hidden"></div>
 

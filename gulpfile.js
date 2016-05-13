@@ -35,7 +35,6 @@ gulp.task('scripts', function() {
 		'./app/libs/waypoints/waypoints.min.js',
 		'./app/libs/animate/animate-css.js',
 		'./app/libs/plugins-scroll/plugins-scroll.js',
-		'./app/libs/superfish/dist/js/superfish.min.js',
 		'./app/libs/owl.carousel/dist/owl.carousel.min.js',
 		'./app/libs/bootstrap/js/bootstrap.min.js',
 		'./app/libs/ion.rangeSlider/js/ion-rangeSlider/ion.rangeSlider.min.js',
