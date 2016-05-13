@@ -1,5 +1,10 @@
-<?php include 'header.php'; ?>
-<?php include 'slider-top.php'; ?>
+<?
+	include 'blocks/header.php';
+	include 'slider-top.php';
+	include 'bd_function.php';
+
+?>
+
 <!--Kataloge START-->
 	<section class="katalog">
 		<div class="container">
@@ -245,12 +250,15 @@
 					</div>
 					<div class="container katalog__body">
 						<div class="row">
-							<?php for ($i = 1; $i <= 12; $i++){?>
+							<?
+								$products = get_products();
+								foreach ($products as $item) {
+							?>
 								<div class="col-md-4 col-sm-6 col-xs-12 card">
 									<div class="card-item">
 										<a href="#">
 											<div class="card-item-image">
-											<img src="img/mockup.png" alt="" class="img-responsive">
+											<img src="img/<? $item['image']?>" alt="" class="img-responsive" >
 														<svg width="100px" height="100px" viewBox="0 0 180 180">
 															<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 																<g id="180---iPhone-6-Plus" stroke="white">
@@ -262,7 +270,7 @@
 														</svg>
 												</div>
 										</a>
-										<h4>Bootstrap 3 Template</h4>
+										<h4><? $item['title']?></h4>
 										<div class="card-item-stars">
 											<i class="fa fa-star"></i>
 											<i class="fa fa-star"></i>
@@ -271,17 +279,17 @@
 											<i class="fa fa-star"></i>
 										</div>
 										<div class="card-item-price">
-											<i class="fa fa-credit-card"></i>	<span>100</span> $
+											<i class="fa fa-credit-card"></i>	<span><? $item['price']?></span> $
 										</div>
 										<button class="btn btn_default">Купить</button>
 									</div>
 								</div>
-							<?php }?>
+							<? } ?>
 						</div>
 
 
 						<!--PAGINATION START-->
-						
+
 						<div class="row">
 							<ul class="pagination">
 								<li>
@@ -303,14 +311,15 @@
 						</div>
 
 						<!--PAGINATION END-->
-								
 					</div>
-				</div>	
+				</div>
 			</div>
 		</div>
 	</section>
-	
+
 
 <!--Kataloge END-->
-<?php include 'popular.php'; ?>
-<?php include 'footer.php'; ?>
+<?
+	include 'popular.php';
+	include 'blocks/footer.php';
+?>
